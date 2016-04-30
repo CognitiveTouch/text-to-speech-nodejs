@@ -27,8 +27,9 @@ require('./config/express')(app);
 // For local development, replace username and password
 var textToSpeech = watson.text_to_speech({
   version: 'v1',
-  username: '<username>',
-  password: '<password>'
+  username: '513B807d-971e-4082-able-cf1c846f6ec2',
+  password: 'VMJBP4ffljHg',
+  url: 'https://stream.watsonplatform.net/text-to-speech/api'
 });
 
 app.get('/api/synthesize', function(req, res, next) {
